@@ -1,0 +1,226 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+img{
+    height: 90vh;
+    
+}
+
+
+.container{
+    display: flex;
+    /* align-items: center; 
+    
+    justify-content: center;
+}
+
+.button-record{
+    display: flex;
+    /* align-items: center; 
+    
+    justify-content: center;
+}
+
+body{
+
+    background-color: #F6F6F6;
+}
+
+
+.button-74 {
+    background-color: rgb(106, 177, 218) ;
+    border: 4px solid #065561;
+    border-radius: 30px;
+    
+    color: #022e27;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-74:hover {
+    background-color: #fff;
+  }
+  
+  .button-74:active {
+    box-shadow: rgb(112, 212, 230) 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  */
+  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    background-color: #88a6cc3a;
+}
+
+h1{
+    text-align: center;
+    color: rgba(47, 155, 119, 0.692);
+    font-size: 50px;
+    padding: 20px 20px;
+}
+
+
+.camera-container{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.camera-feed{
+    width: 80%;
+    border-radius: 5px;
+    background-color: #ac1a1a;
+}
+
+
+.button-record{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-upload{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-74 {
+    background-color: #169186;
+    border: 2px solid #022e27;
+    border-radius: 30px;
+    box-shadow: #022e27 4px 4px 0 0;
+    color: #022e27;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-74:hover {
+    background-color: #fff;
+  }
+  
+  .button-74:active {
+    box-shadow: #022e27 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+/* CONAINER LEFT */
+.container-left{
+    background-color: #169186;   
+    width: 20%;
+    border-radius: 5px;
+    position: relative; /* La div doit avoir une position relative pour positionner l'image par rapport à elle */
+}
+
+.container-left img {
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 30px; /* Vous pouvez ajuster la valeur de 'left' selon vos besoins */
+}
+/* CONAINER MIDDLE */
+.container-middle{
+    width: 60%;
+}
+  /* CONAINER RIGHT */
+.container-right{
+    background-color: #169186;    
+    width: 20%;
+    border-radius: 5px;
+}
+/* 
+
+  @media (min-width: 768px) {
+    .button-74 {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
+
+
+  .line{
+    width: 50%;
+    height: 4px;
+    background-color: #169186;
+    border-radius: 20px;
+    margin: auto;
+  }
+
+ */
+
+
+
+
+
+
+  @media screen and (max-width: 900px) {
+    h1 {
+        font-size: 36px; /* Réduire la taille de la police pour les petits écrans */
+    }
+
+    .camera-container {
+        width: 90%; /* Ajuster la largeur pour les petits écrans */
+        margin: 0 5%; /* Centrer le conteneur */
+    }
+
+    .button-record, .button-upload {
+        height: 60px; /* Réduire la hauteur pour les petits écrans */
+        margin-top: 15px; /* Ajuster les marges pour les petits écrans */
+        margin-bottom: 20px; /* Ajuster les marges pour les petits écrans */
+    }
+
+    .button-74 {
+        font-size: 16px; /* Réduire la taille de la police pour les petits écrans */
+    }
+
+    .line {
+        width: 90%; /* Ajuster la largeur pour les petits écrans */
+        height: 2px; /* Réduire la hauteur pour les petits écrans */
+        margin: auto;
+    }
+} 
