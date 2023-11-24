@@ -4,6 +4,7 @@ const classTrackerSchema = new mongoose.Schema({
   percent : Number ,
   sumNormal : Number ,
   sumOther : Number ,  
+  decision : String ,
   classDetails: [
     {
       className: {

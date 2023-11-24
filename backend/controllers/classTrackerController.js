@@ -7,11 +7,12 @@ const classTrackerModel = require('../models/classTracker');
 
 exports.insertClassTracker = async (req, res) => {
   try {
-    console.log(req.body); // Log the entire request body
+    //console.log(req.body); 
 
     const { classDetails } = req.body;
       let sumClass1 = 0;
     let sumOtherClasses = 0;
+    let decision =""; 
 
     // Loop through classDetails to calculate sums
     for (const entry of classDetails) {
@@ -31,18 +32,21 @@ exports.insertClassTracker = async (req, res) => {
 
     console.log('sumOtherClasses/sumClass1: ', sumOtherClasses/sumClass1);
     if(sumOtherClasses/sumClass1 >0.5){
-      console.log("autiste");
+      //console.log("autiste");
+      decision ="autiste"
     }
     else {
-      console.log("no autiste");
+      //console.log("no autiste");
+      decision = "non autiste" ;
     }
-    console.log("percent" , (sumOtherClasses /(sumOtherClasses+sumClass1))*100);
+   // console.log("percent" , (sumOtherClasses /(sumOtherClasses+sumClass1))*100);
 
     // Validate data if necessary
     const classTrackerObjects = {
       percent: (sumOtherClasses /(sumOtherClasses+sumClass1))*100 , 
       sumNormal:  sumClass1 , 
       sumOther: sumOtherClasses ,
+      decision  : decision ,
       classDetails: classDetails.map(entry => ({
         className: entry.className,
         totalTime: entry.totalTime,

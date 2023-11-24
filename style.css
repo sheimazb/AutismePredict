@@ -1,226 +1,210 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Agbalumo', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Agbalumo", sans-serif;
 }
 
-img{
-    height: 90vh;
-    
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Bigelow Rules;
+  background: linear-gradient(
+    to left,
+    rgb(255, 0, 85) 0%,
+    rgba(55, 0, 255, 0.397) 100%
+  );
+  /* background-color: rgba(255, 0, 170, 0.397); /* Set your desired background color */
 }
 
-
-.container{
-    display: flex;
-    /* align-items: center; 
-    
-    justify-content: center;
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.button-record{
-    display: flex;
-    /* align-items: center; 
-    
-    justify-content: center;
+.image-container {
+  background-image: url("image-removebg-preview (1).png"); /* Replace with the path to your overlay image */
+  background-size: cover; /* Adjust as needed */
+  width: 400px;
+  height: 400px; /* Adjust the height as needed */
+  position: absolute;
+  top: 200px;
+  left: 880px;
+}
+.image-flower {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/009/312/393/original/flower-3d-icon-model-cartoon-style-concept-render-illustration-png.png");
+  background-size: cover; /* Adjust as needed */
+  width: 100px;
+  height: 100px; /* Adjust the height as needed */
+  position: absolute;
+  top: 200px;
+  left: 950px;
 }
 
-body{
+.image-flower1 {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/009/312/393/original/flower-3d-icon-model-cartoon-style-concept-render-illustration-png.png");
+  background-size: cover; /* Adjust as needed */
+  width: 250px;
+  height: 250px; /* Adjust the height as needed */
+  position: absolute;
+  top: 300px;
+  left: 1100px;
+}
+.image-flower4 {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/009/312/128/original/flower-3d-icon-model-cartoon-style-concept-render-illustration-free-png.png");
+  background-size: cover; /* Adjust as needed */
+  width: 100px;
+  height: 100px; /* Adjust the height as needed */
+  position: absolute;
+  top: 485px;
+  left: 415px;
+}
+.image-flower5 {
+  background-image: url("images-removebg-preview (1).png");
+  background-size: cover; /* Adjust as needed */
+  width: 250px;
+  height: 250px; /* Adjust the height as needed */
+  position: absolute;
+  top: 50px;
+  left: 1100px;
+}
+.image-flower2 {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/009/312/128/original/flower-3d-icon-model-cartoon-style-concept-render-illustration-free-png.png");
+  background-size: cover; /* Adjust as needed */
+  width: 150px;
+  height: 150px; /* Adjust the height as needed */
+  position: absolute;
+  top: 450px;
+  left: 900px;
+}
+.image-flower3 {
+  background-image: url("image-removebg-preview (2).png");
+  background-size: cover; /* Adjust as needed */
+  width: 120px;
+  height: 120px; /* Adjust the height as needed */
+  position: absolute;
+  top: 35px;
+  left: 50px;
+}
+h1 {
+  text-align: center;
+  color: rgb(244, 247, 246);
+  font-size: 80px;
+  padding: 20px 20px;
+}
 
-    background-color: #F6F6F6;
+.canvas {
+  position: absolute;
+  right: 190px;
+  width: 50%;
+  height: 350px;
+  margin: 0 30%;
+  background-color: rgba(119, 0, 69, 0.432);
+  border-radius: 20px;
+}
+
+.camera-feed {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.button-record {
+  position: absolute;
+  right: 310px;
+  top: 480px;
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .button-74 {
-    background-color: rgb(106, 177, 218) ;
-    border: 4px solid #065561;
-    border-radius: 30px;
-    
-    color: #022e27;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+  background-color: #1a8fb3;
+  border: 2px solid #1a8fb3;
+  border-radius: 30px;
+  box-shadow: #02252e 2px 2px 0 0;
+  color: #fdfdfd;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.button-74:hover {
+  background-color: rgb(255, 0, 85);
+  border-color: rgb(255, 0, 85);
+  color: #fdfdfd;
+}
+
+.button-74:active {
+  box-shadow: #022e27 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
   }
-  
-  .button-74:hover {
-    background-color: #fff;
-  }
-  
-  .button-74:active {
-    box-shadow: rgb(112, 212, 230) 2px 2px 0 0;
-    transform: translate(2px, 2px);
-  }
-  */
-  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Agbalumo', sans-serif;
 }
 
-
-body{
-    width: 100%;
-    background-color: #88a6cc3a;
+.line {
+  width: 50%;
+  height: 4px;
+  background-color: #169186;
+  border-radius: 20px;
+  margin: auto;
 }
-
-h1{
-    text-align: center;
-    color: rgba(47, 155, 119, 0.692);
-    font-size: 50px;
-    padding: 20px 20px;
-}
-
-
-.camera-container{
-    width: 100%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.camera-feed{
-    width: 80%;
-    border-radius: 5px;
-    background-color: #ac1a1a;
-}
-
-
-.button-record{
-    width: 100%;
-    height: 100px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.button-upload{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.button-74 {
-    background-color: #169186;
-    border: 2px solid #022e27;
-    border-radius: 30px;
-    box-shadow: #022e27 4px 4px 0 0;
-    color: #022e27;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button-74:hover {
-    background-color: #fff;
-  }
-  
-  .button-74:active {
-    box-shadow: #022e27 2px 2px 0 0;
-    transform: translate(2px, 2px);
-  }
-  
-
-.container{
-    display: flex;
-    flex-direction: row;
-
-}
-/* CONAINER LEFT */
-.container-left{
-    background-color: #169186;   
-    width: 20%;
-    border-radius: 5px;
-    position: relative; /* La div doit avoir une position relative pour positionner l'image par rapport à elle */
-}
-
-.container-left img {
-    position: absolute;
-    width: 80%;
-    bottom: 0;
-    left: 30px; /* Vous pouvez ajuster la valeur de 'left' selon vos besoins */
-}
-/* CONAINER MIDDLE */
-.container-middle{
-    width: 60%;
-}
-  /* CONAINER RIGHT */
-.container-right{
-    background-color: #169186;    
-    width: 20%;
-    border-radius: 5px;
-}
-/* 
-
-  @media (min-width: 768px) {
-    .button-74 {
-      min-width: 120px;
-      padding: 0 25px;
-    }
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 36px; /* Réduire la taille de la police pour les petits écrans */
   }
 
+  .camera-container {
+    width: 90%; /* Ajuster la largeur pour les petits écrans */
+    margin: 0 5%; /* Centrer le conteneur */
+  }
 
-  .line{
-    width: 50%;
-    height: 4px;
-    background-color: #169186;
-    border-radius: 20px;
+  .button-record {
+    height: 60px; /* Réduire la hauteur pour les petits écrans */
+    margin-top: 15px; /* Ajuster les marges pour les petits écrans */
+    margin-bottom: 20px; /* Ajuster les marges pour les petits écrans */
+  }
+
+  .button-74 {
+    font-size: 16px; /* Réduire la taille de la police pour les petits écrans */
+  }
+
+  .line {
+    width: 90%; /* Ajuster la largeur pour les petits écrans */
+    height: 2px; /* Réduire la hauteur pour les petits écrans */
     margin: auto;
   }
-
- */
-
-
-
-
-
-
-  @media screen and (max-width: 900px) {
-    h1 {
-        font-size: 36px; /* Réduire la taille de la police pour les petits écrans */
+}
+.cont{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  background-color: rgba(41, 12, 22, 0.24);
+  border-radius: 50%;
+  left: 1050px;
+  bottom: 50px;
+    /* Ajout de l'effet de flou à la bordure */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.349);
     }
-
-    .camera-container {
-        width: 90%; /* Ajuster la largeur pour les petits écrans */
-        margin: 0 5%; /* Centrer le conteneur */
-    }
-
-    .button-record, .button-upload {
-        height: 60px; /* Réduire la hauteur pour les petits écrans */
-        margin-top: 15px; /* Ajuster les marges pour les petits écrans */
-        margin-bottom: 20px; /* Ajuster les marges pour les petits écrans */
-    }
-
-    .button-74 {
-        font-size: 16px; /* Réduire la taille de la police pour les petits écrans */
-    }
-
-    .line {
-        width: 90%; /* Ajuster la largeur pour les petits écrans */
-        height: 2px; /* Réduire la hauteur pour les petits écrans */
-        margin: auto;
-    }
-} 

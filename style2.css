@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Bigelow Rules;
+    background: linear-gradient(
+    to left,
+    rgb(255, 0, 85) 0%,
+    rgba(55, 0, 255, 0.397) 100%
+);
+}
+h1 {
+    text-align: center;
+    color: rgba(244, 247, 246, 0.76);
+    margin-left: 500px;
+    margin-top: 50px;
+    font-size: 80px;
+    padding: 20px 20px;
+    
+  }
+  h2{
+     color: rgba(244, 247, 246, 0.527);
+     text-align: center;
+      margin-left: 500px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .img{
+    background-image: url('perroquet-dessin-anime-ludique-tete-rouge-vif-pieds-bleus_899449-21968-removebg-preview.png');
+    background-size: cover; /* Adjust as needed */
+    width: 400px;
+    height: 400px; /* Adjust the height as needed */
+    position: absolute;
+    top: 230px;
+    left: -150px;  
+}
+  .continer{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background-color: rgba(41, 12, 22, 0.24);
+    border-radius: 50%;
+    left: -150px;
+    bottom: 50px;
+      /* Ajout de l'effet de flou à la bordure */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.349);
+      }
+      .image{
+        background-image: url("image-removebg-preview (3).png");
+        background-size: cover; /* Adjust as needed */
+        width: 450px;
+        height: 450px; /* Adjust the height as needed */
+        position: absolute;
+        top: 100px;
+        left: 210px;
+      }
+      .button-74{
+        margin-left: 900px;
+        margin-top: 30px;
+        padding: 10px;
+        background-color: rgba(205, 218, 255, 0.637);
+        border-color: rgba(205, 218, 255, 0.589);
+      }
+      .button-74:hover{
+        margin-left: 900px;
+        padding: 10px;
+        background-color: rgba(205, 218, 255, 0.836);
+        border-color: rgba(205, 218, 255, 0.589);
+      }
